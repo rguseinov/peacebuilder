@@ -48,7 +48,6 @@ system.file("extdata", "gapminder_gdp_v32.csv", package = "peacebuilder")
 
 #Check the package
 devtools::document()
-
 devtools::check()
 
 usethis::create_github_token()

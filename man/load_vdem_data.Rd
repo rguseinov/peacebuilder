@@ -8,7 +8,12 @@ Varieties of Democracy (V-Dem) Project. Please cite V-Dem when using
 these data.
 }
 \usage{
-load_vdem_data(vars = NULL, coding_system = c("cow", "gw"))
+load_vdem_data(
+  vars = NULL,
+  start_year = 1945,
+  end_year = 2019,
+  coding_system = c("cow", "gw")
+)
 }
 \arguments{
 \item{vars}{Character vector of V-Dem variable names to include. If \code{NULL},

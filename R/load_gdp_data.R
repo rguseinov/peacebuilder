@@ -23,7 +23,11 @@
 #' gdp_gw <- load_gdp_data(coding_system = "gw")
 #'
 #' @export
-load_gdp_data <- function(coding_system = c("cow", "gw")) {
+load_gdp_data <- function(
+    start_year = 1945,
+    end_year = 2019,
+    coding_system = c("cow", "gw")
+    ) {
   path <- system.file(
     "extdata",
     "gdp_gapminder_v32.csv",
@@ -60,6 +64,7 @@ load_gdp_data <- function(coding_system = c("cow", "gw")) {
       dplyr::mutate(gdp_growth = ((gdp_pcap - dplyr::lag(gdp_pcap)) / dplyr::lag(gdp_pcap) * 100),
              log_gdp_pcap = log(gdp_pcap + 1)) %>%
       dplyr::ungroup() %>%
+      dplyr::filter(.data$year >= start_year & .data$year <= end_year) %>%
       dplyr::select(cow, year, gdp_pcap, log_gdp_pcap, gdp_growth)
   }
 
@@ -83,6 +88,7 @@ load_gdp_data <- function(coding_system = c("cow", "gw")) {
       dplyr::mutate(gdp_growth = ((gdp_pcap - dplyr::lag(gdp_pcap)) / dplyr::lag(gdp_pcap) * 100),
              log_gdp_pcap = log(gdp_pcap + 1)) %>%
       dplyr::ungroup() %>%
+      dplyr::filter(.data$year >= start_year & .data$year <= end_year) %>%
       dplyr::select(gw, year, gdp_pcap, log_gdp_pcap, gdp_growth)
   }
 

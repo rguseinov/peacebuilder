@@ -47,13 +47,15 @@
 #' @export
 load_vdem_data <- function(
     vars = NULL,
+    start_year = 1945,
+    end_year = 2019,
     coding_system = c("cow", "gw")
 ) {
 
   if (!requireNamespace("vdemdata", quietly = TRUE)) {
     stop(
       "Package 'vdemdata' is required to use V-Dem data. ",
-      "Install it with remotes::install_github('vdeminstitute/vdemdata').",
+      "Install it with devtools::install_github('vdeminstitute/vdemdata').",
       call. = FALSE
     )
   }
@@ -123,7 +125,8 @@ load_vdem_data <- function(
       tidyr::drop_na(.data$cow) %>%
       dplyr::filter(.data$cow != 265) %>%
       dplyr::select(.data$cow, .data$year, dplyr::all_of(vars)) %>%
-      dplyr::arrange(.data$cow, .data$year)
+      dplyr::arrange(.data$cow, .data$year) %>%
+      dplyr::filter(.data$year >= start_year & .data$year <= end_year)
 
     check_unique_key(vdem_dataset, c("cow", "year"))
 
@@ -141,7 +144,8 @@ load_vdem_data <- function(
       ) %>%
       tidyr::drop_na(.data$gw) %>%
       dplyr::select(.data$gw, .data$year, dplyr::all_of(vars)) %>%
-      dplyr::arrange(.data$gw, .data$year)
+      dplyr::arrange(.data$gw, .data$year) %>%
+      dplyr::filter(.data$year >= start_year & .data$year <= end_year)
 
     check_unique_key(vdem_dataset, c("gw", "year"))
 

@@ -1,3 +1,15 @@
+#' Build a state panel
+#'
+#' @param start_year First year.
+#' @param end_year Last year.
+#' @param coding_system Country coding system. Either `"cow"` or `"gw"`.
+#' @param exclude_microstates Logical.
+#' @param exclude_non_un Logical.
+#' @param exclude_islands Logical.
+#'
+#' @return A data frame with state-year observations.
+#'
+#' @export
 build_states_cow_panel <- function(
     start_year = 1946,
     end_year = 2013,

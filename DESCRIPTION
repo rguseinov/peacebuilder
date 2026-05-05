@@ -17,6 +17,7 @@ Depends:
 Imports:
     dplyr,
     magrittr,
+    states,
     tidyr,
     tibble,
     countrycode,

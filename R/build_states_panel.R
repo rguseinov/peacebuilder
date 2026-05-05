@@ -10,6 +10,39 @@
 #' @return A data frame with state-year observations.
 #'
 #' @export
+build_states_panel <- function(
+    start_year = 1946,
+    end_year = 2013,
+    coding_system = c("cow", "gw"),
+    exclude_microstates = TRUE,
+    exclude_non_un = TRUE,
+    exclude_islands = FALSE
+) {
+  check_year_range(start_year, end_year)
+  coding_system <- match.arg(coding_system)
+  if (coding_system == "cow") {
+    return(
+      build_states_cow_panel(
+        start_year = start_year,
+        end_year = end_year,
+        exclude_microstates = exclude_microstates,
+        exclude_non_un = exclude_non_un,
+        exclude_islands = exclude_islands
+      )
+    )
+  }
+  if (coding_system == "gw") {
+    return(
+      build_states_gw_panel(
+        start_year = start_year,
+        end_year = end_year,
+        exclude_microstates = exclude_microstates,
+        exclude_non_un = exclude_non_un
+      )
+    )
+  }
+}
+
 build_states_cow_panel <- function(
     start_year = 1946,
     end_year = 2013,
@@ -125,37 +158,4 @@ build_states_gw_panel <- function(
   check_unique_key(states, c("gw", "year"))
 
   return(states)
-}
-
-build_states_panel <- function(
-  start_year = 1946,
-  end_year = 2013,
-  coding_system = c("cow", "gw"),
-  exclude_microstates = TRUE,
-  exclude_non_un = TRUE,
-  exclude_islands = FALSE
-) {
-  check_year_range(start_year, end_year)
-  coding_system <- match.arg(coding_system)
-  if (coding_system == "cow") {
-    return(
-      build_states_cow_panel(
-        start_year = start_year,
-        end_year = end_year,
-        exclude_microstates = exclude_microstates,
-        exclude_non_un = exclude_non_un,
-        exclude_islands = exclude_islands
-      )
-    )
-  }
-  if (coding_system == "gw") {
-    return(
-      build_states_gw_panel(
-        start_year = start_year,
-        end_year = end_year,
-        exclude_microstates = exclude_microstates,
-        exclude_non_un = exclude_non_un
-      )
-    )
-  }
 }

@@ -1,6 +1,6 @@
 # peacebuilder
 
-`peacebuilder` is an R package for building panel datasets for political scientists and peace science researchers.
+`peacebuilder` is an R package for constructing panel datasets for political scientists and peace science researchers.
 
 The package provides tools for creating state-year panels and adding selected socio-economic and political indicators. It is designed for workflows that use country-year data with either COW or Gleditsch-Ward country coding schemes.
 
@@ -37,6 +37,8 @@ Loads V-Dem panel data. The function supports a number of default pre-loaded var
 
 ```r
 panel <- build_states_panel(
+  start_year = 1946,
+  end_year = 2019,
   vars = c('v2x_polyarchy', 'v2x_libdem'),
   coding_system = c("cow")
 )
@@ -48,6 +50,8 @@ Loads Gapminder GDP panel data. The function calculates GDP growth rates (%) and
 
 ```r
 panel <- load_gdp_data(
+  start_year = 1946,
+  end_year = 2019,
   coding_system = c("cow")
 )
 ```

@@ -24,8 +24,8 @@ panel_df2 <- build_states_panel(start_year = 1900,
                                   exclude_non_un = TRUE,
                                   exclude_islands = TRUE, coding_system = 'cow')
 
-dem_data <- load_vdem_data(coding_system = 'gw')
-gdp_data <- load_gdp_data(coding_system = 'gw')
+dem_data <- load_vdem_data(coding_system = 'gw', start_year = 1980, end_year = 2008)
+gdp_data <- load_gdp_data(coding_system = 'gw', start_year = 1990, end_year = 2005)
 
 
 dplyr::glimpse(panel_df)

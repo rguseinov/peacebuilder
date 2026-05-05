@@ -1,0 +1,11 @@
+utils::globalVariables(c(
+  ".data",
+  "country",
+  "cow",
+  "cowcode",
+  "gdp_pcap",
+  "microstate",
+  "n",
+  "name",
+  "year"
+))

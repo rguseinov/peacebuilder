@@ -1,0 +1,32 @@
+Package: peacebuilder
+Type: Package
+Title: Build Peace Science Data Panels
+Version: 0.0.1
+Authors@R: 
+    person("Ruslan", "Guseinov", email = "rigusseinov@gmail.com", role = c("aut", "cre"))
+Description: Provides tools for building panel datasets for political scientists 
+    and peace science researchers. The package includes functions for creating state panels 
+    (with flexible opportunities to refine them) and adding socio-economic, political and 
+    conflict-related indicators. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr,
+    magrittr,
+    tidyr,
+    tibble,
+    countrycode,
+    peacesciencer,
+    rlang,
+    readr
+Suggests:
+    testthat (>= 3.0.0),
+    vdemdata,
+    rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/rguseinov/peacebuilder
+BugReports: https://github.com/rguseinov/peacebuilder/issues

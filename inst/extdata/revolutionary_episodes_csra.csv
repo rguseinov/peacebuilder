@@ -1,0 +1,223 @@
+﻿n,start_year,end_year,start_date,end_date,name,country,iso3c,region,successful,limited,failed,ongoing,armed,unarmed,regime_change,islamistic,democratic,social,separatism,other,coupvolution,revolutions,revolutions_plus_question,all,number_of_participants_low,number_of_participants_high,military_defection,foreign_support,ethnic
+242001,2000,2001,19/05/2000,01/03/2001,"""Anti-Hindu"" revolution",Fiji,FJI,Melanesia,1,0,0,0,1,0,1,0,0,1,0,1,1,1,1,1,5000,5000,1,0,0
+324001,2000,2001,02/09/2000,09/03/2001,Uprising of the democratic forces of Guinea,Guinea,GIN,Sub-Saharan Africa,0,0,1,0,1,0,1,0,1,0,0,0,0,1,1,1,1800,5000,0,0,0
+807011,2001,2001,22/01/2001,12/11/2001,Albanian Uprising in Macedonia 2001,North Macedonia,MKD,Southern Europe,0,0,1,0,1,0,0,0,1,0,1,0,0,1,1,1,2000,5000,0,0,1
+4011,2001,2021,17/12/2001,15/08/2021,Taliban insurgency,Afghanistan,AFG,Southern Asia,1,0,0,0,1,0,1,1,0,0,0,0,0,1,1,1,60000,70000,0,1,0
+384021,2002,2007,19/09/2002,04/03/2007,First Ivorian civil war,Cote d'Ivoire,CIV,Sub-Saharan Africa,0,0,1,0,1,0,1,0,0,1,0,0,1,1,1,1,10000,20000,0,1,0
+729031,2003,2020,26/02/2003,31/08/2020,Darfur uprising,Sudan,SDN,Northern Africa,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,1,35000,35000,0,1,0
+764041,2004,2025,04/01/2004,08/06/2025,Islamist insurgency in southern Thailand,Thailand,THA,South-eastern Asia,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,10000,30000,0,0,0
+887041,2004,2010,18/06/2004,06/02/2015,"Houthi Uprising / ""6 Saada Wars""",Yemen,YEM,Western Asia,1,0,0,0,1,0,1,0,0,1,0,0,0,1,1,1,10000,100000,1,1,0
+792041,2004,2025,06/10/2004,08/06/2025,Kurdistan Workers' Party insurgency,Turkey,TUR,Western Asia,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,1,4000,7000,0,0,0
+368041,2004,2011,17/10/2004,18/12/2011,Iraqi Insurgency (Sunnis/Alqaida in Iraq),Iraq,IRQ,Western Asia,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,1,5000,35000,1,0,0
+364051,2005,2016,09/07/2005,25/02/2016,Kurdish Uprising (Party of Free Life in Kurdistan),"Iran, Islamic Republic of",IRN,Southern Asia,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,1,2000,3000,0,1,1
+586051,2005,2025,15/12/2005,08/06/2025,Balochistan separatist movement,Pakistan,PAK,Southern Asia,0,0,1,1,1,0,0,1,0,0,1,0,0,1,1,1,5000,15000,0,0,0
+148051,2005,2010,18/12/2005,15/01/2010,Second Chadian Civil War,Chad,TCD,Sub-Saharan Africa,0,0,1,0,1,0,1,0,1,1,0,0,0,1,1,1,10000,20000,0,0,0
+706061,2006,2025,01/12/2006,08/06/2025,Al-Shabaab Insurgency,Somalia,SOM,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,12000,18000,0,0,0
+466071,2007,2009,06/02/2007,03/05/2009,The Third Tuareg Rebellion,Mali,MLI,Sub-Saharan Africa,0,0,1,0,1,0,0,0,0,0,1,0,0,1,1,1,3000,4000,0,0,1
+562071,2007,2009,06/02/2007,03/05/2009,Tuareg Rebellion,Niger,NER,Sub-Saharan Africa,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,1000,11000,0,0,1
+887071,2007,2025,01/05/2007,08/06/2025,Southern Movement (Al-Hirak),Yemen,YEM,Western Asia,0,1,0,1,1,0,0,0,0,0,1,0,0,1,1,1,7000,10000,0,1,0
+275071,2007,2007,10/06/2007,15/06/2007,Hamas Revolution,"Palestine, State of",PSE,Western Asia,0,1,0,0,1,0,1,1,0,0,0,0,0,1,1,1,20000,20000,0,0,0
+586071,2007,2017,03/07/2007,01/07/2017,Insurgency in Khyber Pakhtunkhwa,Pakistan,PAK,Southern Asia,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,1,30000,40000,0,0,0
+450091,2009,2009,24/01/2009,16/03/2009,Anti-Ravalomanana uprising,Madagascar,MDG,Sub-Saharan Africa,1,0,0,0,1,0,1,0,1,0,0,0,1,1,1,1,10000,15000,1,0,
+887091,2009,2025,17/12/2009,08/06/2025,Insurgency of Al-Qaeda in the Arabian Peninsula,Yemen,YEM,Western Asia,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,6000,8000,0,0,0
+764101,2010,2010,12/03/2010,19/05/2010,Red Shirts Unrest,Thailand,THA,South-eastern Asia,0,0,1,0,1,0,1,0,0,0,0,1,0,0,1,1,50000,300000,0,0,0
+732101,2010,2025,09/10/2010,08/06/2025,Renewed Western Sahara Independence movement,Western Sahara,ESH,Northern Africa,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,1,30000,40000,0,0,0
+384101,2010,2011,28/11/2010,11/04/2011,Pro-Ouattara uprising and Second Ivorian Civil War,Cote d'Ivoire,CIV,Sub-Saharan Africa,1,0,0,0,1,0,1,0,0,0,0,1,0,0,1,1,3000,6000,0,1,0
+434111,2011,2011,12/01/2011,24/02/2011,February 17 Revolution (First Libyan Civil War),Libya,LBY,Northern Africa,1,0,0,0,1,0,1,0,1,0,0,0,0,1,1,1,17000,20000,0,0,0
+887111,2011,2012,27/01/2011,27/02/2012,Yemeni Revolution,Yemen,YEM,Western Asia,1,0,0,0,1,0,1,0,1,0,0,0,0,1,1,1,100000,100000,1,0,0
+760111,2011,2024,15/03/2011,08/12/2024,Syrian Revolution and Civil War,Syrian Arab Republic,SYR,Western Asia,1,0,0,0,1,0,1,1,1,0,0,0,0,1,1,1,125000,150000,1,1,0
+566111,2011,2025,29/05/2011,08/06/2025,Boko Haram insurgency,Nigeria,NGA,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,5000,18000,0,0,0
+729112,2011,2020,05/06/2011,31/08/2020,Conflict in South Kordofan,Sudan,SDN,Northern Africa,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,1,35000,50000,1,1,1
+104111,2011,2025,09/06/2011,08/06/2025,Second Kachin Rebellion,Myanmar,MMR,South-eastern Asia,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1,1,10000,12000,0,0,0
+466121,2012,2012,16/01/2012,06/04/2012,The Fourth Tuareg Uprising,Mali,MLI,Sub-Saharan Africa,1,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,2500,5000,0,1,1
+180121,2012,2013,04/04/2012,07/11/2013,M23 rebellion ,"Congo, the Democratic Republic of the",COD,Sub-Saharan Africa,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,6000,6000,0,1,0
+760121,2012,2025,19/07/2012,08/06/2025,Rojava Revolution,Syrian Arab Republic,SYR,Western Asia,0,1,0,1,1,0,0,0,0,1,1,0,0,1,1,1,20000,30000,0,0,1
+466122,2012,2025,01/08/2012,08/06/2025,Jihadist Insurgency,Mali,MLI,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,4000,10000,0,0,0
+140121,2012,2013,10/12/2012,27/03/2013,Anti-Bozizé insurgency,Central African Republic,CAF,Sub-Saharan Africa,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,1,3000,5000,0,0,0
+140131,2013,2014,31/03/2013,12/07/2014,Anti-Balaka Revolt,Central African Republic,CAF,Sub-Saharan Africa,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,1500,2000,1,0,0
+120131,2013,2021,15/04/2013,30/12/2021,Insurgency of Jamaatu Ahli-l-Sunnah Li-l-daawati wa-l-Jihad  (Boko Haram) / ISWAP,Cameroon,CMR,Sub-Saharan Africa,0,0,1,0,1,0,1,1,0,0,0,0,0,1,1,1,1000,1000,0,0,1
+818132,2013,2023,03/07/2013,25/01/2023,Insurgency in the Sinai Peninsula,Egypt,EGY,Northern Africa,0,0,1,0,1,0,1,1,0,0,0,0,1,1,1,1,1000,1500,0,0,0
+728131,2013,2020,15/12/2013,22/02/2020,South Sudanese Civil War,South Sudan,SSD,Sub-Saharan Africa,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,30000,50000,0,0,0
+368131,2013,2017,30/12/2013,09/12/2017,ISIS insurgency in Iraq,Iraq,IRQ,Western Asia,0,0,1,0,1,0,1,1,0,0,0,0,0,0,1,1,10000,35000,0,0,0
+760131,2013,2025,13/06/2014,08/06/2025,ISIS insurgency in Syria,Syrian Arab Republic,SYR,Western Asia,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,30000,50000,0,0,0
+804141,2014,2022,12/04/2014,24/02/2022,Events in Donbass,Ukraine,UKR,Eastern Europe,1,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,36000,40000,1,1,0
+434141,2014,2025,16/05/2014,08/06/2025,Haftar’s Rebellion (Second Lybian Civil War),Libya,LBY,Northern Africa,0,1,0,1,1,0,1,0,0,0,0,1,0,1,1,1,7000,25000,0,1,0
+404141,2014,2025,15/06/2014,08/06/2025,Kenyan Al–Shabaab Insurgency,Kenya,KEN,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,5000,10000,0,0,0
+562151,2015,2025,23/01/2015,08/06/2025,Boko Haram insurgency in Niger,Niger,NER,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,1000,5000,0,0,0
+4151,2015,2025,26/01/2015,08/06/2025,Islamic State Khorasan Province insurgency,Afghanistan,AFG,Southern Asia,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,3000,6000,0,0,0
+104151,2015,2025,09/02/2015,08/06/2025,Myanmar National Democratic Alliance Army uprising,Myanmar,MMR,South-eastern Asia,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,1,15000,25000,0,0,0
+356151,2015,2025,24/04/2015,08/06/2025,Insurgency of the United National Front for the Liberation of West Southeast Asia,India,IND,Southern Asia,0,0,0,1,1,0,0,0,0,0,1,0,0,1,1,1,2000,3500,0,0,0
+854151,2015,2025,23/08/2015,08/06/2025,Al-Qaeda Insurgency,Burkina Faso,BFA,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,6000,10000,0,0,0
+148161,2016,2025,01/01/2016,08/06/2025,FACT insurgency,Chad,TCD,Sub-Saharan Africa,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,5000,7000,0,1,0
+562171,2017,2025,01/01/2017,08/06/2025,ISGS insurgency in Niger,Niger,NER,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,1,0,1,1,2000,3000,0,0,0
+120171,2017,2025,09/09/2017,08/06/2025,Ambazonia Insurgency,Cameroon,CMR,Sub-Saharan Africa,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,1,2000,4000,0,0,0
+508171,2017,2025,05/10/2017,08/06/2025,Islamist insurgency in Cabo Delgado,Mozambique,MOZ,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,0,1,1,1,2500,2500,0,0,0
+854181,2018,2025,01/01/2018,08/06/2025,ISGS insurgency in Burkina Faso,Burkina Faso,BFA,Sub-Saharan Africa,0,0,1,1,1,0,1,1,0,0,0,0,1,0,1,1,1000,5000,0,0,0
+231201,2020,2022,03/11/2020,03/11/2022,Tigray Uprising,Ethiopia,ETH,Sub-Saharan Africa,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,350000,450000,0,0,1
+706201,2020,2021,01/12/2020,01/05/2021,Electoral Revolution,Somalia,SOM,Sub-Saharan Africa,0,1,0,0,1,0,1,0,1,0,0,0,0,1,1,1,1000,5000,0,0,0
+104211,2021,2025,02/02/2021,08/06/2025,Burmese Spring Revolution and Civil War,Myanmar,MMR,South-eastern Asia,0,0,0,1,1,0,1,0,1,0,0,0,0,0,1,1,65000,100000,0,0,0
+275211,2021,2021,06/05/2021,21/05/2021,Unity Intifada,"Palestine, State of",PSE,Western Asia,0,0,1,0,1,0,0,0,0,0,1,0,0,0,1,1,20000,50000,0,0,0
+398221,2022,2022,02/01/2022,11/01/2022,Bloody January,Kazakhstan,KAZ,Central Asia,0,1,0,0,1,1,1,0,1,1,0,0,0,0,1,1,20000,50000,0,0,0
+231231,2023,2025,09/04/2023,08/06/2025,FATO rebellion,Ethiopia,ETH,Sub-Saharan Africa,0,0,0,1,1,0,1,1,0,0,1,0,0,1,1,1,15000,20000,0,0,1
+729231,2023,2025,15/04/2023,08/06/2025,Sudanese Civil War,Sudan,SDN,Northern Africa,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,70000,120000,0,1,0
+466231,2023,2025,11/08/2023,08/06/2025,The Fifth Tuareg Rebellion,Mali,MLI,Sub-Saharan Africa,0,0,0,1,1,0,1,1,0,0,1,0,0,0,1,1,1000,5000,0,0,1
+250241,2024,2024,13/05/2024,03/12/2024,New Caledonian Uprising,France,FRA,Western Europe,0,0,1,0,1,0,1,0,0,1,1,0,0,1,1,1,5000,5000,0,0,1
+404241,2024,2024,18/06/2024,08/08/2024,Finance Bill Uprising,Kenya,KEN,Sub-Saharan Africa,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1,1,5000,15000,0,0,0
+218001,2000,2000,21/01/2000,22/01/2000,Anti-Mahuad uprising,Ecuador,ECU,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,1,0,0,1,1,1,1,20000,40000,1,0,0
+604001,2000,2000,10/04/2000,20/11/2000,Anti-Fujimori uprising,Peru,PER,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,40000,40000,0,0,0
+275001,2000,2005,28/09/2000,08/02/2005,Intifadat al-Aqsa,"Palestine, State of",PSE,Western Asia,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,1,1000,5000,0,1,0
+688001,2000,2000,29/09/2000,05/10/2000,Bulldozer Revolution (anti-Milosevic uprising),Serbia,SRB,Southern Europe,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,200000,200000,1,1,0
+384001,2000,2000,24/10/2000,26/10/2000,Anti-Guei Uprising,Cote d'Ivoire,CIV,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,30000,0,0,0
+608011,2001,2001,17/01/2001,20/01/2001,Second People Power Revolution,Philippines,PHL,South-eastern Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,1000000,1,0,0
+792011,2001,2001,31/03/2001,14/04/2001,Economic crisis uprising,Turkey,TUR,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,50000,50000,0,0,0
+32011,2001,2001,19/12/2001,20/12/2001,Argentinaso,Argentina,ARG,Latin America and the Caribbean,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1000000,1000000,0,0,0
+450021,2002,2002,08/01/2002,05/07/2002,Malagasy political crisis,Madagascar,MDG,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,100000,0,0,0
+862021,2002,2002,09/04/2002,11/04/2002,Anti-Chavez Campaign,"Venezuela, Bolivarian Republic of",VEN,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,1,1,1,1,100000,200000,1,0,0
+68031,2003,2003,19/09/2003,18/10/2003,The Gas Revolution,"Bolivia, Plurinational State of",BOL,Latin America and the Caribbean,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,80000,100000,0,0,0
+268031,2003,2003,03/11/2003,23/11/2003,Rose Revolution,Georgia,GEO,Western Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,30000,100000,1,1,0
+332041,2004,2004,05/02/2004,29/02/2004,Anti-Artiside Uprising,Haiti,HTI,Latin America and the Caribbean,1,0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1000,5000,0,1,0
+218041,2004,2005,19/04/2004,20/04/2005,Rebelión de los Forajidos,Ecuador,ECU,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,100000,100000,0,0,0
+68041,2004,2004,16/07/2004,18/07/2004,Anti-Mesa uprising,"Bolivia, Plurinational State of",BOL,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,20000,20000,0,0,0
+462041,2004,2004,12/08/2004,13/08/2004,Black Friday uprsisng,Maldives,MDV,Southern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,10000,10000,0,0,0
+50041,2004,2004,23/08/2004,24/08/2004,Anti-BNP uprising,Bangladesh,BGD,Southern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,20000,20000,0,0,0
+804041,2004,2005,22/11/2004,23/01/2005,Orange Revolution,Ukraine,UKR,Eastern Europe,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,500000,1,1,0
+768051,2005,2005,05/02/2005,25/02/2005,Anti-Gnassingbe uprising,Togo,TGO,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,80000,90000,0,0,0
+422051,2005,2005,13/02/2005,27/02/2005,Cedar Revolution,Lebanon,LBN,Western Asia,1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,1,800000,800000,1,1,0
+417051,2005,2005,20/03/2005,11/04/2005,Tulip Revolution,Kyrgyzstan,KGZ,Central Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,20000,20000,1,0,0
+764051,2005,2006,01/09/2005,19/09/2006,Uprisings against Thaksin Shinawatra,Thailand,THA,South-eastern Asia,1,0,0,0,0,1,1,0,1,1,0,0,1,1,1,1,5000,100000,1,0,0
+31051,2005,2005,09/11/2005,09/11/2005,Anti-Aliev uprising,Azerbaijan,AZE,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,15000,15000,0,0,0
+112061,2006,2006,19/03/2006,25/03/2006,Jeans (Cornflower) Revolution,Belarus,BLR,Eastern Europe,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,40000,45000,0,0,0
+524061,2006,2006,04/04/2006,26/04/2006,April Revolution ,Nepal,NPL,Southern Asia,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,1,100000,500000,0,0,0
+348061,2006,2006,17/09/2006,04/11/2006,Anti-Gyurcsány uprising,Hungary,HUN,Eastern Europe,0,0,1,0,0,1,1,0,0,0,0,0,0,0,1,1,40000,50000,0,0,0
+50061,2006,2007,29/10/2006,11/01/2007,Bangladesh Awami League protests,Bangladesh,BGD,Southern Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,10000,25000,1,0,0
+776061,2006,2006,16/11/2006,16/11/2006,Unrest in Nuku’alofa,Tonga,TON,Polynesia,0,1,0,0,0,1,1,0,0,0,0,1,0,1,1,1,2000,3000,0,0,0
+422061,2006,2008,01/12/2006,21/05/2008,Anti-Siniora uprising,Lebanon,LBN,Western Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,0,1,1,800000,1000000,0,1,0
+324071,2007,2007,10/01/2007,01/03/2007,Guinean General Strike,Guinea,GIN,Sub-Saharan Africa,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,1,30000,30000,0,0,0
+104071,2007,2007,15/08/2007,26/09/2008,Saffron Revolution,Myanmar,MMR,South-eastern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,30000,100000,0,0,0
+268071,2007,2007,28/09/2007,25/11/2007,Anti-Saakashvili uprising,Georgia,GEO,Western Asia,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,1,10000,15000,0,0,0
+51081,2008,2008,20/02/2008,02/03/2008,Marti mek,Armenia,ARM,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,50000,150000,0,0,0
+156081,2008,2009,10/03/2008,15/01/2009,Tibetan unrest,China,CHN,Eastern Asia,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,4000,8000,0,0,0
+764081,2008,2008,25/05/2008,02/12/2008,Yellowshirt Unrest (People’s Union for Democracy),Thailand,THA,South-eastern Asia,1,0,0,0,0,1,1,0,1,0,0,1,0,1,1,1,20000,50000,0,0,0
+428091,2009,2009,13/01/2009,13/01/2009,Riga riot,Latvia,LVA,Northern Europe,0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,10000,10000,0,0,0
+352091,2009,2009,20/01/2009,26/01/2009,"Kitchenware, Kitchen Implement or Pots and Pans Revolution",Iceland,ISL,Northern Europe,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,3000,5000,0,0,0
+450092,2009,2009,25/03/2009,23/05/2009,Anti-Rajoelina uprising,Madagascar,MDG,Sub-Saharan Africa,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,1,15000,20000,0,0,0
+764091,2009,2009,26/03/2009,19/04/2009,Bloody Songkran,Thailand,THA,South-eastern Asia,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,80000,100000,0,0,0
+498091,2009,2009,06/04/2009,12/04/2009,Twitter Revolution / Grape Revolution,"Moldova, Republic of",MDA,Eastern Europe,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,10000,30000,0,0,0
+268091,2009,2009,09/04/2009,24/07/2009,Anti-Saakashvili uprising 2,Georgia,GEO,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,50000,60000,0,0,0
+562091,2009,2010,10/05/2009,18/02/2010,Anti-“tazarce” coupvolution,Niger,NER,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,20000,50000,1,0,0
+364091,2009,2010,13/06/2009,07/12/2010,Green Movement,"Iran, Islamic Republic of",IRN,Southern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,2000000,3000000,0,0,0
+340091,2009,2010,28/06/2009,01/07/2010,Uprising of the National Front of popular resistance (Frente Nacional de resistencia Popular),Honduras,HND,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,530000,600000,0,0,0
+768101,2010,2011,07/03/2010,08/07/2011,Togolese election uprising,Togo,TGO,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,1,15000,15000,0,0,0
+417101,2010,2010,06/04/2010,15/04/2010,The Melon Revolution,Kyrgyzstan,KGZ,Central Asia,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,1,10000,10000,0,0,0
+300101,2010,2015,05/05/2010,25/01/2015,Anti-Austerity Movement,Greece,GRC,Southern Europe,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,1,300000,500000,0,0,0
+788101,2010,2011,17/12/2010,14/01/2011,Jasmine Revolution,Tunisia,TUN,Northern Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,200000,1,0,0
+400111,2011,2012,14/01/2011,04/10/2012,The Arab Spring in Jordan,Jordan,JOR,Western Asia,0,1,0,0,0,1,1,0,1,0,0,0,0,1,1,1,6000,10000,0,0,0
+818111,2011,2011,25/01/2011,11/02/2011,January 25 Revolution,Egypt,EGY,Northern Africa,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,250000,20000000,1,0,0
+262111,2011,2011,28/01/2011,11/03/2011,Arab Spring in Djibouti,Djibouti,DJI,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,30000,30000,0,0,0
+729111,2011,2013,30/01/2011,26/10/2013,Arab Spring in Sudan,Sudan,SDN,Northern Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,16000,16000,0,0,0
+48111,2011,2011,14/02/2011,18/03/2011,Pearl Revolution,Bahrain,BHR,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,150000,300000,0,0,0
+364111,2011,2011,14/02/2011,14/02/2012,The Arab Spring in Iran,"Iran, Islamic Republic of",IRN,Southern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,150000,400000,0,0,0
+414111,2011,2012,19/02/2011,01/12/2012,The Arab Spring in Kuwait,Kuwait,KWT,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,20000,50000,0,0,0
+504111,2011,2012,20/02/2011,23/09/2012,The Arab Spring in Morocco,Morocco,MAR,Northern Africa,0,1,0,0,0,1,1,1,1,0,0,0,0,0,1,1,50000,60000,0,0,0
+854111,2011,2011,22/02/2011,09/06/2011,Burkinabè Spring,Burkina Faso,BFA,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,3000,15000,0,0,0
+478111,2011,2012,25/02/2011,19/07/2012,Arab Spring in Mauritania,Mauritania,MRT,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,20000,50000,0,0,0
+462111,2011,2012,01/05/2011,14/04/2012,Nasheed uprising,Maldives,MDV,Southern Asia,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,20000,20000,1,0,0
+724111,2011,2011,15/05/2011,28/12/2011,Indignados (15M) Movement,Spain,ESP,Southern Europe,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,150000,250000,0,0,0
+454111,2011,2011,17/07/2011,21/09/2011,Anti-Mutharika uprising,Malawi,MWI,Sub-Saharan Africa,1,0,0,0,0,1,1,0,0,0,0,1,0,1,1,1,5000,15000,0,0,0
+840111,2011,2012,17/09/2011,01/01/2012,Occupy movement,United States,USA,Northern America,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,70000,100000,0,0,0
+686121,2012,2012,01/02/2012,23/06/2012,June 23 uprising,Senegal,SEN,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,15000,0,0,1
+768121,2012,2013,12/06/2012,25/07/2013,Let’s Save Togo Uprising,Togo,TGO,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,15000,0,0,0
+50131,2013,2013,05/02/2013,06/03/2013,Anti-Awami League uprising,Bangladesh,BGD,Southern Asia,0,1,0,0,0,1,1,0,1,0,0,0,1,1,1,1,150000,400000,0,0,0
+76131,2013,2016,16/05/2013,12/05/2016,Vinegar Revolution,Brazil,BRA,Latin America and the Caribbean,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,700000,2000000,0,0,0
+792131,2013,2013,28/05/2013,20/08/2013,Gezi Park Anti-Erdoğan uprising,Turkey,TUR,Western Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,150000,500000,0,0,0
+100131,2013,2014,14/06/2013,23/07/2014,Anti-Oresharski uprising,Bulgaria,BGR,Eastern Europe,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,20000,25000,0,0,0
+818131,2013,2013,30/06/2013,03/07/2013,June 30 Revolution,Egypt,EGY,Northern Africa,1,0,0,0,0,1,1,0,0,0,0,1,1,1,1,1,14000000,33000000,1,0,0
+788131,2013,2013,25/07/2013,14/12/2013,Anti–Islamist uprising,Tunisia,TUN,Northern Africa,1,0,0,0,0,1,1,0,0,0,0,1,0,1,1,1,40000,400000,0,,0
+116131,2013,2014,28/07/2013,22/07/2014,Uprising in Cambodia 2013–2014,Cambodia,KHM,South-eastern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,500000,0,0,1
+764131,2013,2014,31/10/2013,22/05/2014,Uprising of the Civic Movement for Democracy,Thailand,THA,South-eastern Asia,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,160000,250000,1,0,0
+804131,2013,2014,21/11/2013,22/02/2014,Euromaidan,Ukraine,UKR,Eastern Europe,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,1,400000,800000,1,1,0
+70141,2014,2014,04/02/2014,10/04/2014,Bosnian Spring,Bosnia and Herzegovina,BIH,Southern Europe,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,5000,15000,0,0,0
+862141,2014,2019,12/02/2014,08/05/2014,Anti-Maduro uprising ,"Venezuela, Bolivarian Republic of",VEN,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,1,0,0,0,1,1,1,20000,50000,0,0,0
+999141,2014,2014,29/04/2014,24/08/2014,Abkhazian Revolution,Abkhazia,,,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,15000,0,0,0
+344141,2014,2014,28/09/2014,15/12/2014,The Umbrella Revolution,Hong Kong,HKG,Eastern Asia,0,0,1,0,0,1,0,0,1,0,1,0,0,1,1,1,20000,50000,0,0,0
+854141,2014,2014,28/10/2014,03/11/2014,"Second Burkini Revolution,  Deuxième révolution burkinabé",Burkina Faso,BFA,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,150000,400000,1,0,0
+332141,2014,2016,14/12/2014,20/11/2016,Revolutionary actions against Michel Martelly,Haiti,HTI,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,1000,10000,0,0,0
+862142,2014,2019,10/01/2019,16/11/2019,Anti-Maduro uprising 3,"Venezuela, Bolivarian Republic of",VEN,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,200000,1000000,0,0,0
+999151,2015,2016,06/01/2015,03/02/2015,Anti-government uprising,Kosovo,,,0,1,0,0,0,1,1,0,0,1,0,0,0,0,1,1,5000,35000,0,0,0
+498151,2015,2016,27/03/2015,13/11/2016,Protests in Moldova 2015–2016,"Moldova, Republic of",MDA,Eastern Europe,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,30000,100000,0,0,0
+320151,2015,2016,25/04/2015,01/04/2016,Guatemala Uprising,Guatemala,GTM,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,10000,15000,0,0,0
+108151,2015,2015,26/04/2015,15/05/2015,Anti-Nkurunziza uprising,Burundi,BDI,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,1,1,1,1,5000,15000,1,0,0
+807151,2015,2016,05/05/2015,20/06/2016,Colorful Revolution,North Macedonia,MKD,Southern Europe,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,15000,25000,0,1,0
+340151,2015,2015,29/05/2015,28/08/2015,Honduran Indignados,Honduras,HND,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,8000,50000,0,0,0
+218151,2015,2015,08/06/2015,16/09/2015,Anti-Correa uprising,Ecuador,ECU,Latin America and the Caribbean,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,375000,400000,0,0,0
+458151,2015,2015,29/08/2015,30/08/2015,Berish uprising,Malaysia,MYS,South-eastern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,29000,200000,0,0,0
+499151,2015,2016,27/09/2015,28/11/2016,Anti-Dukanovic uprising,Montenegro,MNE,Southern Europe,0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,3000,10000,0,1,0
+642151,2015,2015,03/11/2015,09/11/2015,Anti-Ponta Uprising (#Colectiv Revolution),Romania,ROU,Eastern Europe,1,0,0,0,0,1,1,0,0,1,0,0,0,0,1,1,25000,35000,0,0,0
+352161,2016,2016,04/04/2016,20/04/2016,Anti-Davíð Uprising,Iceland,ISL,Northern Europe,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,10000,22000,0,0,0
+716161,2016,2017,06/07/2016,21/11/2017,Anti-Mugabe Uprising,Zimbabwe,ZWE,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,1,0,0,1,0,0,1,5000,15000,1,0,0
+356161,2016,2017,08/07/2016,01/02/2017,Kashmir protests,India,IND,Southern Asia,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,1,40000,50000,0,0,0
+724161,2016,2017,11/09/2016,21/12/2017,Catalan independence movement,Spain,ESP,Southern Europe,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,600000,2000000,1,0,1
+410161,2016,2017,26/10/2016,15/04/2017,Candlelight Revolution,"Korea, Republic of",KOR,Eastern Asia,1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,1,1800000,2000000,0,0,0
+180161,2016,2016,14/12/2016,23/12/2016,Anti-Kabila uprising,"Congo, the Democratic Republic of the",COD,Sub-Saharan Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,15000,0,0,0
+642171,2017,2019,18/01/2017,10/08/2019,Ordinance Bills Uprising,Romania,ROU,Eastern Europe,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,450000,550000,0,0,0
+862171,2017,2017,31/03/2017,12/08/2017,Anti-Maduro uprising 2,"Venezuela, Bolivarian Republic of",VEN,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,2500000,6000000,0,0,0
+768171,2017,2018,19/08/2017,06/12/2018,Anti-Gnassingbe uprising,Togo,TGO,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,500000,800000,0,0,0
+340171,2017,2018,27/11/2017,11/12/2018,Anti-Hernández uprising,Honduras,HND,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,0,0,1,1,1,1,1,20000,50000,0,0,0
+51181,2018,2018,31/03/2018,08/05/2018,Velvet Revolution,Armenia,ARM,Western Asia,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,100000,250000,0,0,0
+558181,2018,2019,18/04/2018,17/07/2018,Anti-Ortega uprising,Nicaragua,NIC,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,0,0,0,1,1,1,1,150000,400000,0,0,0
+332181,2018,2019,07/07/2018,01/11/2019,Anti-Jovenel uprising,Haiti,HTI,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,20000,50000,0,0,0
+250181,2018,2020,17/11/2018,28/06/2020,Yellow Vests Revolution,France,FRA,Western Europe,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,270000,290000,0,0,0
+688181,2018,2020,30/11/2018,16/03/2020,Stop Bloody Shirts uprising,Serbia,SRB,Southern Europe,0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,15000,45000,0,0,0
+729181,2018,2019,19/12/2018,18/12/2018,Sudanese Revolution,Sudan,SDN,Northern Africa,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,750000,800000,1,0,0
+499191,2019,2019,02/02/2019,17/12/2019,Anti-Dukanovic uprising 2,Montenegro,MNE,Southern Europe,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,5000,15000,0,0,0
+8191,2019,2019,16/02/2019,05/07/2019,Anti-Rama Uprising,Albania,ALB,Southern Europe,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,5000,15000,0,0,0
+12191,2019,2019,16/02/2019,02/04/2019,The Smile Revolution ,Algeria,DZA,Northern Africa,1,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,1000000,1200000,1,0,0
+344191,2019,2020,09/06/2019,01/01/2020,Protests in Hong Kong against extradition bill,Hong Kong,HKG,Eastern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,338000,2000000,0,0,0
+630191,2019,2019,08/07/2019,12/08/2019,Telegramgate protests,Puerto Rico,PRI,Latin America and the Caribbean,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,1,500000,500000,0,0,0
+368191,2019,2021,01/10/2019,25/05/2021,Iraqi October Revolution (Tishreen Movement),Iraq,IRQ,Western Asia,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,150000,400000,0,0,0
+218191,2019,2019,03/10/2019,14/10/2019,Anti-Moreno Uprising,Ecuador,ECU,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,0,1,1,1,20000,50000,0,0,1
+152191,2019,2022,07/10/2019,04/09/2022,Estallido Social,Chile,CHL,Latin America and the Caribbean,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,1000000,1200000,0,0,0
+422191,2019,2021,17/10/2019,14/10/2021,October 17 Revolution,Lebanon,LBN,Western Asia,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,1000000,1200000,0,0,0
+68191,2019,2019,21/10/2019,10/11/2019,Pitita revolution,"Bolivia, Plurinational State of",BOL,Latin America and the Caribbean,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,50000,150000,1,0,0
+364191,2019,2019,15/11/2019,19/11/2019,Bloody November,"Iran, Islamic Republic of",IRN,Southern Asia,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,200000,200000,0,0,0
+270191,2019,2020,01/12/2019,27/01/2020,Anti-Barrow Uprising (Three Years Jotna),Gambia,GMB,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,5000,15000,0,0,0
+112201,2020,2021,25/05/2020,25/03/2021,"""The Slipper Revolution""",Belarus,BLR,Eastern Europe,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,200000,400000,0,0,0
+840201,2020,2021,26/05/2020,26/05/2021,George Floyd (BLM) protests,United States,USA,Northern America,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,500000,700000,0,0,0
+466201,2020,2020,05/06/2020,19/08/2020,Mali Coupvolution,Mali,MLI,Sub-Saharan Africa,1,0,0,0,0,1,1,0,0,1,0,1,0,1,1,1,5000,15000,1,0,0
+68201,2020,2020,26/07/2020,14/11/2020,Anti-Áñez Uprising,"Bolivia, Plurinational State of",BOL,Latin America and the Caribbean,0,1,0,0,0,1,1,0,1,1,0,0,0,0,1,1,20000,50000,0,0,0
+417201,2020,2020,05/10/2020,15/10/2020,Third Kyrgyz Revolution,Kyrgyzstan,KGZ,Central Asia,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,1,5000,10000,0,0,0
+51201,2020,2021,10/11/2020,25/04/2021,March of Dignity,Armenia,ARM,Western Asia,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,15000,20000,0,0,0
+524201,2020,2021,20/12/2020,04/02/2021,Pro–monarchy movement,Nepal,NPL,Southern Asia,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,5000,15000,0,0,0
+840211,2021,2021,06/01/2021,06/01/2021,Storming of the United States Capitol,United States,USA,Northern America,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,5000,15000,0,0,0
+788211,2021,2021,15/01/2021,25/07/2021,Saied self-coupvolution,Tunisia,TUN,Northern Africa,1,0,0,0,0,1,1,0,0,1,0,0,1,0,1,1,20000,50000,0,0,0
+148211,2021,2021,06/02/2021,08/05/2021,Anti-Déby Uprising,Chad,TCD,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,5000,15000,0,0,0
+332211,2021,2021,07/02/2021,24/03/2021,Anti-Jovenel Uprising 2,Haiti,HTI,Latin America and the Caribbean,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,5000,15000,0,0,0
+729211,2021,2021,25/02/2021,21/11/2021,Sudanese Counter-revolution,Sudan,SDN,Northern Africa,1,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,150000,400000,0,0,0
+170211,2021,2021,28/04/2021,31/12/2021,2021 Colombian uprising,Colombia,COL,Latin America and the Caribbean,0,1,0,0,0,1,1,0,0,1,0,0,0,1,1,1,20000,50000,0,0,0
+748211,2021,2023,23/06/2021,15/06/2023,Anti-Mswati Uprising,Eswatini,SWZ,Sub-Saharan Africa,0,0,1,0,0,1,1,0,1,0,0,0,0,0,1,1,5000,15000,0,0,0
+192211,2021,2021,11/07/2021,17/07/2021,Anti-Díaz-Canel Uprising,Cuba,CUB,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,1,100000,500000,0,0,0
+90211,2021,2021,24/11/2021,27/11/2021,Anti-Sogavare Uprising,Solomon Islands,SLB,Melanesia,0,0,1,0,0,1,0,0,0,1,1,1,0,1,0,1,1000,5000,0,0,1
+144221,2022,2022,15/03/2022,14/11/2022,Aragalaya,Sri Lanka,LKA,Southern Asia,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,1,500000,1000000,0,0,0
+51221,2022,2022,05/04/2022,19/06/2022,Resistance Movement,Armenia,ARM,Western Asia,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,32000,44000,0,0,0
+586221,2022,2025,10/04/2022,08/06/2025,Pro-Khan Uprising,Pakistan,PAK,Southern Asia,0,1,0,1,0,1,1,0,0,0,0,1,0,1,1,1,20000,50000,0,0,0
+218221,2022,2022,13/06/2022,30/06/2022,Anti-Lasso Uprising,Ecuador,ECU,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,5000,14000,0,0,1
+591221,2022,2022,01/07/2022,10/08/2022,Anti-Cortizo uprising,Panama,PAN,Latin America and the Caribbean,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,15000,25000,0,0,0
+860221,2022,2022,01/07/2022,03/07/2022,Karakalpak Uprising,Uzbekistan,UZB,Central Asia,0,1,0,0,0,1,0,0,0,0,1,0,0,1,1,1,5000,15000,0,0,0
+999221,2022,2024,31/07/2022,01/01/2024,Serbian protests in Kosovo,Kosovo,,,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1000,5000,0,1,1
+364221,2022,2023,16/09/2022,17/02/2023,Mahsa Amini Uprising,"Iran, Islamic Republic of",IRN,Southern Asia,0,0,1,0,0,1,1,0,1,1,0,0,0,1,0,1,70000,150000,0,0,1
+498221,2022,2023,18/09/2022,16/06/2023,Anti-Sandu Uprising,"Moldova, Republic of",MDA,Eastern Europe,0,0,1,0,0,1,1,0,0,1,0,0,0,0,1,1,20000,75000,0,1,0
+170221,2022,2022,26/09/2022,31/12/2022,Anti-Petro Uprising,Colombia,COL,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,1,5000,10000,0,0,0
+76221,2022,2023,30/10/2022,09/01/2023,Bolsonaristas Uprising,Brazil,BRA,Latin America and the Caribbean,0,0,1,0,0,1,1,0,0,0,0,1,0,0,1,1,18000,18000,0,0,0
+156221,2022,2022,02/11/2022,05/12/2022,A4 (White Paper) Revolution ,China,CHN,Eastern Asia,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,5000,50000,0,0,0
+496221,2022,2023,04/12/2022,01/01/2023,Corruprtion Uprising,Mongolia ,MNG,Eastern Asia,0,1,0,0,0,1,1,0,1,1,0,0,0,0,0,1,20000,20000,0,0,0
+604221,2022,2023,07/12/2022,24/03/2023,Anti-Boluarte Uprising,Peru,PER,Latin America and the Caribbean,0,0,1,0,0,1,1,0,1,1,0,0,0,1,1,1,20000,50000,0,0,1
+376231,2023,2023,07/01/2023,06/10/2023,Judicial Reform Uprising,Israel,ISR,Western Asia,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,150000,600000,0,0,0
+250231,2023,2023,10/01/2023,06/06/2023,French pension reform strikes,France,FRA,Western Europe,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1280000,3500000,0,0,0
+268231,2023,2024,06/03/2023,05/06/2024,Foreign Agent Law Uprising,Georgia,GEO,Western Asia,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,1,20000,20000,0,0,0
+51231,2023,2023,19/09/2023,28/09/2023,Anti-Pashinyan uprising ,Armenia,ARM,Western Asia,0,0,1,0,0,1,1,0,0,1,0,1,0,0,1,1,5000,15000,0,0,0
+524231,2023,2023,23/11/2023,27/11/2023,Pro-monarchist uprrising,Nepal,NPL,Southern Asia,0,0,1,0,0,1,1,0,0,0,0,1,0,1,1,1,20000,50000,0,0,0
+688231,2023,2023,18/12/2023,30/12/2023,Serbian anti-Vucic election protests,Serbia,SRB,Southern Europe,0,0,1,0,0,1,1,0,1,0,0,0,0,1,1,1,50000,50000,0,0,0
+170241,2024,2025,21/04/2024,08/06/2025,Anti-Petro Uprising 2,Colombia,COL,Latin America and the Caribbean,0,0,0,1,0,1,1,0,1,1,0,0,0,0,1,1,70000,100000,0,0,0
+51241,2024,2024,23/04/2024,23/06/2024,Tavush for the Homeland,Armenia,ARM,Western Asia,0,0,1,0,0,1,1,0,1,0,0,1,0,1,1,1,20000,50000,0,0,0
+50241,2024,2025,06/06/2024,08/06/2025,Gen Z Revolution,Bangladesh,BGD,Southern Asia,1,0,0,1,0,1,1,0,1,1,0,0,0,1,1,1,20000,50000,0,0,0
+862241,2024,2025,28/07/2024,08/06/2025,Anti-Maduro uprising 4,"Venezuela, Bolivarian Republic of",VEN,Latin America and the Caribbean,0,0,1,1,0,1,1,0,1,0,0,0,0,1,1,1,150000,400000,0,0,0

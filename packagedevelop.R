@@ -5,6 +5,7 @@ usethis::use_mit_license("Ruslan Guseinov")
 usethis::use_r("utils")
 usethis::use_r("globals")
 usethis::use_r("pipe")
+usethis::use_r("conflict_data")
 usethis::use_package("readr")
 devtools::document()
 devtools::load_all()
@@ -27,6 +28,8 @@ panel_df2 <- build_states_panel(start_year = 1900,
 dem_data <- load_vdem_data(coding_system = 'gw', start_year = 1980, end_year = 2008)
 gdp_data <- load_gdp_data(coding_system = 'gw', start_year = 1990, end_year = 2005)
 
+#### load conflict data ####
+df <- conflict_data(dataset = 'navco1.3')
 
 dplyr::glimpse(panel_df)
 #no duplicates

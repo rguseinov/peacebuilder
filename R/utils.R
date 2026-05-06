@@ -54,3 +54,35 @@ check_unique_key <- function(data, keys) {
 
   invisible(data)
 }
+
+#' Load an RData file from package extdata
+#'
+#' @param filename Character. Name of the `.RData` file located in
+#'   `inst/extdata`.
+#'
+#' @return The single object stored in the `.RData` file.
+#'
+#' @keywords internal
+read_rdata_from_extdata <- function(filename) {
+  path <- system.file(
+    "extdata",
+    filename,
+    package = "peacebuilder"
+  )
+  if (path == "") {
+    stop(
+      "Could not find `", filename, "` in package extdata.",
+      call. = FALSE
+    )
+  }
+  env <- new.env(parent = emptyenv())
+  obj_names <- load(path, envir = env)
+  if (length(obj_names) != 1) {
+    stop(
+      "`", filename, "` must contain exactly one object, but contains: ",
+      paste(obj_names, collapse = ", "),
+      call. = FALSE
+    )
+  }
+  env[[obj_names]]
+}

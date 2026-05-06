@@ -40,7 +40,7 @@ panel <- build_states_panel(
   start_year = 1946,
   end_year = 2019,
   vars = c('v2x_polyarchy', 'v2x_libdem'),
-  coding_system = c("cow")
+  coding_system = "cow"
 )
 ```
 
@@ -52,6 +52,6 @@ Loads Gapminder GDP panel data. The function calculates GDP growth rates (%) and
 panel <- load_gdp_data(
   start_year = 1946,
   end_year = 2019,
-  coding_system = c("cow")
+  coding_system = "cow"
 )
 ```

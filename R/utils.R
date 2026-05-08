@@ -76,7 +76,7 @@ read_rdata_from_extdata <- function(filename) {
     )
   }
   env <- new.env(parent = emptyenv())
-  obj_names <- load(path, envir = env)
+  obj_names <- suppressWarnings(load(path, envir = env))
   if (length(obj_names) != 1) {
     stop(
       "`", filename, "` must contain exactly one object, but contains: ",

@@ -7,7 +7,8 @@
 conflict_data(
   start_year = 1945,
   end_year = 2013,
-  dataset = c("navco1.3", "navco2.1", "beissinger", "csra")
+  dataset = c("navco1.3", "navco2.1", "beissinger", "csra"),
+  coding_system = c("cow", "gw")
 )
 }
 \arguments{

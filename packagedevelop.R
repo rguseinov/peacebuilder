@@ -29,7 +29,7 @@ dem_data <- load_vdem_data(coding_system = 'gw', start_year = 1980, end_year = 2
 gdp_data <- load_gdp_data(coding_system = 'gw', start_year = 1990, end_year = 2005)
 
 #### load conflict data ####
-df <- conflict_data(dataset = 'navco1.3')
+df <- conflict_data(start_year = 1945,  end_year = 2013, dataset = 'navco1.3', coding_system = 'cow')
 
 dplyr::glimpse(panel_df)
 #no duplicates

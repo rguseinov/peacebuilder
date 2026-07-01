@@ -12,6 +12,7 @@ utils::globalVariables(c(
   "log_gdp_pcap",
   "microstate",
   "n",
+  "n_campaigns",
   "name",
   "year"
 ))

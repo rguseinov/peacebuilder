@@ -1,7 +1,7 @@
 Package: peacebuilder
 Type: Package
 Title: Build Peace Science Data Panels
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person("Ruslan", "Guseinov", email = "rigusseinov@gmail.com", role = c("aut", "cre"))
 Description: Provides tools for building panel datasets for political scientists 

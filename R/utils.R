@@ -55,6 +55,24 @@ check_unique_key <- function(data, keys) {
   invisible(data)
 }
 
+#' Detect coding system from a panel data frame
+#'
+#' @param panel A data frame produced by `build_states_panel()`.
+#'
+#' @return `"cow"` or `"gw"`.
+#'
+#' @keywords internal
+detect_coding_system <- function(panel) {
+  if ("cow" %in% names(panel)) return("cow")
+  if ("gw"  %in% names(panel)) return("gw")
+  stop(
+    "Panel must contain a 'cow' or 'gw' column. ",
+    "Use `build_states_panel()` to create a valid panel.",
+    call. = FALSE
+  )
+}
+
+
 #' Load an RData file from package extdata
 #'
 #' @param filename Character. Name of the `.RData` file located in

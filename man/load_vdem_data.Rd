@@ -20,6 +20,10 @@ load_vdem_data(
 a default set of civil society, repression, civil liberties, democracy,
 corruption, and rule-of-law indicators is returned.}
 
+\item{start_year}{Integer. First year to include.}
+
+\item{end_year}{Integer. Last year to include.}
+
 \item{coding_system}{Character. Country coding system to use.
 Either \code{"cow"} for Correlates of War codes or \code{"gw"} for
 Gleditsch-Ward codes.}

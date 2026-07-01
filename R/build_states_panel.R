@@ -37,7 +37,8 @@ build_states_panel <- function(
         start_year = start_year,
         end_year = end_year,
         exclude_microstates = exclude_microstates,
-        exclude_non_un = exclude_non_un
+        exclude_non_un = exclude_non_un,
+        exclude_islands = exclude_islands
       )
     )
   }
@@ -108,7 +109,8 @@ build_states_gw_panel <- function(
     start_year = 1946,
     end_year = 2013,
     exclude_microstates = TRUE,
-    exclude_non_un = TRUE
+    exclude_non_un = TRUE,
+    exclude_islands = FALSE
 ) {
 
   check_year_range(start_year, end_year)
@@ -132,6 +134,13 @@ build_states_gw_panel <- function(
       dplyr::filter(!.data$gw %in% non_un_entities)
   }
 
+  #Exclude Dominica, Grenada, Saint Lucia, Saint Vincent and the Grenadines, Antigua and Barbuda, Saint Kitts and Nevis
+  if (exclude_islands) {
+    small_island_states <- c(54, 55, 56, 57, 58, 60)
+    states <- states %>%
+      dplyr::filter(!.data$gw %in% small_island_states)
+  }
+
   if (exclude_microstates) {
     states <- states %>%
       dplyr::filter(!(.data$gw %in% microstates$gwcode))
@@ -142,17 +151,9 @@ build_states_gw_panel <- function(
       country = suppressWarnings(countrycode::countrycode(.data$gw, "gwn", "country.name")),
       country = ifelse(.data$gw == 260, "German Federal Republic", .data$country),
       country = ifelse(.data$gw == 255, "Germany", .data$country),
-      country = ifelse(.data$country == "Yugoslavia" & .data$year >= 2006, "Serbia", .data$country),
-      #gw = dplyr::case_when(
-        #.data$gw == 315 ~ 316,
-        #.data$gw == 255 ~ 260,
-        #.data$gw == 345 ~ 340,
-      #  TRUE ~ .data$gw
-      #)
+      country = ifelse(.data$country == "Yugoslavia" & .data$year >= 2006, "Serbia", .data$country)
     ) %>%
-    tidyr::drop_na(gw) %>%
-    tidyr::drop_na(country) %>%
-    #dplyr::filter(!(.data$gw == 255 & .data$year == 1990 & .data$country == "German Federal Republic")) %>%
+    tidyr::drop_na(.data$gw, .data$country) %>%
     dplyr::arrange(.data$gw, .data$year)
 
   check_unique_key(states, c("gw", "year"))

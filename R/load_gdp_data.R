@@ -1,8 +1,12 @@
+#' Load GDP per capita data
+#'
 #' @description
 #' Loads GDP per capita data from the Gapminder dataset included with the
 #' package and returns a country-year dataset using either COW or
 #' Gleditsch-Ward country codes.
 #'
+#' @param start_year Integer. First year to include.
+#' @param end_year Integer. Last year to include.
 #' @param coding_system Character. Country coding system to use.
 #'   Either `"cow"` for Correlates of War codes or `"gw"` for
 #'   Gleditsch-Ward codes.
@@ -59,13 +63,13 @@ load_gdp_data <- function(
         )
       ) %>%
       tidyr::drop_na(.data$cow) %>%
-      dplyr::arrange(cow, year) %>%
-      dplyr::group_by(cow) %>%
-      dplyr::mutate(gdp_growth = ((gdp_pcap - dplyr::lag(gdp_pcap)) / dplyr::lag(gdp_pcap) * 100),
-             log_gdp_pcap = log(gdp_pcap + 1)) %>%
+      dplyr::arrange(.data$cow, .data$year) %>%
+      dplyr::group_by(.data$cow) %>%
+      dplyr::mutate(gdp_growth = ((.data$gdp_pcap - dplyr::lag(.data$gdp_pcap)) / dplyr::lag(.data$gdp_pcap) * 100),
+             log_gdp_pcap = log(.data$gdp_pcap)) %>%
       dplyr::ungroup() %>%
       dplyr::filter(.data$year >= start_year & .data$year <= end_year) %>%
-      dplyr::select(cow, year, gdp_pcap, log_gdp_pcap, gdp_growth)
+      dplyr::select(.data$cow, .data$year, .data$gdp_pcap, .data$log_gdp_pcap, .data$gdp_growth)
   }
 
   if (coding_system == "gw") {
@@ -77,19 +81,19 @@ load_gdp_data <- function(
           destination = "gwn"
         )),
         gw = dplyr::case_when(
-          .data$name == "Serbia" ~ 345,
+          .data$name == "Serbia" ~ 340,
           .data$name == "China" ~ 710,
           TRUE ~ .data$gw
         )
       ) %>%
       tidyr::drop_na(.data$gw) %>%
-      dplyr::arrange(gw, year) %>%
-      dplyr::group_by(gw) %>%
-      dplyr::mutate(gdp_growth = ((gdp_pcap - dplyr::lag(gdp_pcap)) / dplyr::lag(gdp_pcap) * 100),
-             log_gdp_pcap = log(gdp_pcap + 1)) %>%
+      dplyr::arrange(.data$gw, .data$year) %>%
+      dplyr::group_by(.data$gw) %>%
+      dplyr::mutate(gdp_growth = ((.data$gdp_pcap - dplyr::lag(.data$gdp_pcap)) / dplyr::lag(.data$gdp_pcap) * 100),
+             log_gdp_pcap = log(.data$gdp_pcap)) %>%
       dplyr::ungroup() %>%
       dplyr::filter(.data$year >= start_year & .data$year <= end_year) %>%
-      dplyr::select(gw, year, gdp_pcap, log_gdp_pcap, gdp_growth)
+      dplyr::select(.data$gw, .data$year, .data$gdp_pcap, .data$log_gdp_pcap, .data$gdp_growth)
   }
 
   return(gdp_data)

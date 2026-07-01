@@ -18,6 +18,8 @@ conflict_data(
 
 \item{dataset}{Dataset to load. One of \code{"navco1.3"}, \code{"navco2.1"},
 \code{"beissinger"}, or \code{"csra"}.}
+
+\item{coding_system}{Country coding system. Either \code{"cow"} or \code{"gw"}.}
 }
 \value{
 A data frame containing the selected conflict dataset.

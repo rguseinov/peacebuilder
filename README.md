@@ -38,10 +38,10 @@ panel <- build_states_panel(
 Loads V-Dem panel data. The function supports a number of default pre-loaded variables, though users can personally select variables of their interest. The function supports two country coding systems: Correlates of War (`"cow"`) and Gleditsch-Ward (`"gw"`). A usage example:
 
 ```r
-panel <- build_states_panel(
+vdem <- load_vdem_data(
+  vars = c('v2x_polyarchy', 'v2x_libdem'),
   start_year = 1946,
   end_year = 2019,
-  vars = c('v2x_polyarchy', 'v2x_libdem'),
   coding_system = "cow"
 )
 ```

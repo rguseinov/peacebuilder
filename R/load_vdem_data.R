@@ -8,6 +8,8 @@
 #' @param vars Character vector of V-Dem variable names to include. If `NULL`,
 #'   a default set of civil society, repression, civil liberties, democracy,
 #'   corruption, and rule-of-law indicators is returned.
+#' @param start_year Integer. First year to include.
+#' @param end_year Integer. Last year to include.
 #' @param coding_system Character. Country coding system to use.
 #'   Either `"cow"` for Correlates of War codes or `"gw"` for
 #'   Gleditsch-Ward codes.

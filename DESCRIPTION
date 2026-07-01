@@ -19,10 +19,7 @@ Imports:
     magrittr,
     states,
     tidyr,
-    tibble,
     countrycode,
-    peacesciencer,
-    rlang,
     readr
 Suggests:
     testthat (>= 3.0.0),

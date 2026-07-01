@@ -2,43 +2,63 @@
 % Please edit documentation in R/add_data.R
 \name{add_conflict}
 \alias{add_conflict}
-\title{Add conflict data to a state panel}
+\title{Add conflict or protest data to a state panel}
 \usage{
 add_conflict(panel, dataset, aggregate = TRUE)
 }
 \arguments{
 \item{panel}{A data frame produced by \code{build_states_panel()}.}
 
-\item{dataset}{Dataset to load. One of \code{"navco1.3"}, \code{"navco2.1"},
-\code{"beissinger"}, or \code{"csra"}.}
+\item{dataset}{Dataset to load. One of:
+\describe{
+\item{\code{"navco1.3"}}{NAVCO 1.3 nonviolent campaign onsets (1900-2006).}
+\item{\code{"navco2.1"}}{NAVCO 2.1 campaign-years (1945-2013).}
+\item{\code{"beissinger"}}{Beissinger revolutionary episode onsets (1900-2014).}
+\item{\code{"csra"}}{HSE CSRA revolutionary episodes (1900-2022).}
+\item{\code{"scad"}}{SCAD 2018 social conflict events, Africa and Latin America
+(1990-2018). Prefix: \code{scad_}.}
+\item{\code{"ucdp_prio"}}{UCDP/PRIO Armed Conflict Dataset v26.1 (1946-2025).
+Prefix: \code{ucdp_prio_}.}
+\item{\code{"ucdp_vpp"}}{UCDP Violent Political Protest v26.1 (1989-2025).
+Prefix: \code{ucdp_vpp_}. Requires the \code{readxl} package.}
+\item{\code{"mm"}}{Mass Mobilization Project v4 (1990-2019). Prefix: \code{mm_}.}
+\item{\code{"mmad"}}{Mass Mobilization in Autocracies Database (2003-2022).
+Prefix: \code{mmad_}.}
+}}
 
 \item{aggregate}{Logical. If \code{TRUE} (default), aggregates to country-year
-before joining. If \code{FALSE}, performs a raw left join (may produce
-duplicate rows).}
+before joining (relevant for legacy campaign datasets only). If \code{FALSE},
+performs a raw left join.}
 }
 \value{
-The input panel with conflict columns added via left join.
+The input panel with conflict/protest columns added via left join.
 }
 \description{
-Joins a conflict or revolutionary episode dataset onto an existing
+Joins a conflict, protest, or revolutionary episode dataset onto an existing
 state panel at the country-year level.
 
-Because conflict datasets are campaign-level or campaign-year-level,
-multiple records can exist for the same country-year. By default
-(\code{aggregate = TRUE}), the function aggregates to country-year by taking
-the maximum of all numeric columns — which yields a binary onset indicator
-and flags any active campaign for that country-year. A count of campaigns
-(\code{n_campaigns}) is also added.
+\strong{New datasets} (\code{"scad"}, \code{"ucdp_prio"}, \code{"ucdp_vpp"}, \code{"mm"}, \code{"mmad"})
+are already at the country-year level when loaded, so the \code{aggregate}
+argument has no effect for them.
 
-Set \code{aggregate = FALSE} to skip aggregation and get the raw join. This will
-produce duplicate rows when multiple campaigns overlap in the same
-country-year, so use it only if you plan to handle that yourself.
+\strong{Legacy campaign datasets} (\code{"navco1.3"}, \code{"navco2.1"}, \code{"beissinger"},
+\code{"csra"}) can have multiple rows per country-year when campaigns overlap.
+With \code{aggregate = TRUE} (the default) these are collapsed to country-year
+by taking the maximum of all numeric columns, and an \code{n_campaigns} count
+column is added. Set \code{aggregate = FALSE} to keep campaign-level rows (may
+produce duplicates).
 }
 \examples{
 panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
   add_conflict(dataset = "navco2.1")
 
-# Raw join — researcher handles aggregation manually
+panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
+  add_conflict(dataset = "ucdp_prio")
+
+panel <- build_states_panel(2005, 2020, coding_system = "cow") |>
+  add_conflict(dataset = "mmad")
+
+# Raw join for legacy datasets — researcher handles aggregation manually
 panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
   add_conflict(dataset = "navco1.3", aggregate = FALSE)
 

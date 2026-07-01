@@ -2,12 +2,13 @@
 % Please edit documentation in R/conflict_data.R
 \name{conflict_data}
 \alias{conflict_data}
-\title{Load conflict and revolutionary episode data}
+\title{Load conflict and mobilisation data}
 \usage{
 conflict_data(
   start_year = 1945,
   end_year = 2013,
-  dataset = c("navco1.3", "navco2.1", "beissinger", "csra"),
+  dataset = c("navco1.3", "navco2.1", "beissinger", "csra", "scad", "ucdp_prio",
+    "ucdp_vpp", "mm", "mmad"),
   coding_system = c("cow", "gw")
 )
 }
@@ -16,15 +17,48 @@ conflict_data(
 
 \item{end_year}{Last year to include.}
 
-\item{dataset}{Dataset to load. One of \code{"navco1.3"}, \code{"navco2.1"},
-\code{"beissinger"}, or \code{"csra"}.}
+\item{dataset}{Dataset to load. One of:
+\describe{
+\item{\code{"navco1.3"}}{NAVCO 1.3 nonviolent campaign onsets. Coverage: 1900-2006.}
+\item{\code{"navco2.1"}}{NAVCO 2.1 campaign-years. Coverage: 1945-2013.}
+\item{\code{"beissinger"}}{Beissinger revolutionary episode onsets. Coverage: 1900-2014.}
+\item{\code{"csra"}}{HSE CSRA revolutionary episodes. Coverage: 1900-2022.}
+\item{\code{"scad"}}{SCAD 2018 social conflict events, Africa and Latin America.
+Coverage: 1990-2018. Prefix: \code{scad_}.}
+\item{\code{"ucdp_prio"}}{UCDP/PRIO Armed Conflict Dataset v26.1.
+Coverage: 1946-2025. Prefix: \code{ucdp_prio_}.}
+\item{\code{"ucdp_vpp"}}{UCDP Violent Political Protest Dataset v26.1.
+Coverage: 1989-2025. Prefix: \code{ucdp_vpp_}. Requires the \code{readxl} package.}
+\item{\code{"mm"}}{Mass Mobilization Project v4 (Clark and Regan).
+Coverage: 1990-2019. Prefix: \code{mm_}.}
+\item{\code{"mmad"}}{Mass Mobilization in Autocracies Database.
+Coverage: 2003-2022. Prefix: \code{mmad_}.}
+}}
 
-\item{coding_system}{Country coding system. Either \code{"cow"} or \code{"gw"}.}
+\item{coding_system}{Country coding system: \code{"cow"} or \code{"gw"}.
+\code{ucdp_prio} and \code{ucdp_vpp} use GW codes natively; when
+\code{coding_system = "cow"} they are converted via \code{countrycode} and
+countries without a COW equivalent are dropped.}
 }
 \value{
-A data frame containing the selected conflict dataset.
+A data frame. Legacy datasets: one row per campaign per country-year.
+New datasets: one row per country-year.
 }
 \description{
-Loads selected conflict or revolutionary episode datasets included with
-the package.
+Loads one of nine conflict, protest, or revolutionary episode datasets
+bundled with the package. All new datasets (\code{scad}, \code{ucdp_prio}, \code{ucdp_vpp},
+\code{mm}, \code{mmad}) are returned at the \strong{country-year} level; event- or
+campaign-level sources are pre-aggregated inside this function.
+
+For legacy campaign datasets (\code{navco1.3}, \code{navco2.1}, \code{beissinger}, \code{csra})
+the function returns campaign-year rows. Use \code{add_conflict(aggregate = TRUE)}
+(the default) to collapse these to country-year automatically.
+}
+\examples{
+navco <- conflict_data(1990, 2010, dataset = "navco2.1", coding_system = "cow")
+
+scad  <- conflict_data(1995, 2015, dataset = "scad",      coding_system = "cow")
+
+ucdp  <- conflict_data(1990, 2020, dataset = "ucdp_prio", coding_system = "gw")
+
 }

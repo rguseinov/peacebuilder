@@ -2,9 +2,11 @@
 
 export(add_conflict)
 export(add_gdp)
+export(add_leader_data)
 export(add_vdem)
 export(build_states_panel)
 export(conflict_data)
 export(load_gdp_data)
+export(load_leader_data)
 export(load_vdem_data)
 importFrom(magrittr,"%>%")

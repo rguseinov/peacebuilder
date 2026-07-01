@@ -67,37 +67,57 @@ add_vdem <- function(panel, vars = NULL) {
 }
 
 
-#' Add conflict data to a state panel
+#' Add conflict or protest data to a state panel
 #'
 #' @description
-#' Joins a conflict or revolutionary episode dataset onto an existing
+#' Joins a conflict, protest, or revolutionary episode dataset onto an existing
 #' state panel at the country-year level.
 #'
-#' Because conflict datasets are campaign-level or campaign-year-level,
-#' multiple records can exist for the same country-year. By default
-#' (`aggregate = TRUE`), the function aggregates to country-year by taking
-#' the maximum of all numeric columns — which yields a binary onset indicator
-#' and flags any active campaign for that country-year. A count of campaigns
-#' (`n_campaigns`) is also added.
+#' **New datasets** (`"scad"`, `"ucdp_prio"`, `"ucdp_vpp"`, `"mm"`, `"mmad"`)
+#' are already at the country-year level when loaded, so the `aggregate`
+#' argument has no effect for them.
 #'
-#' Set `aggregate = FALSE` to skip aggregation and get the raw join. This will
-#' produce duplicate rows when multiple campaigns overlap in the same
-#' country-year, so use it only if you plan to handle that yourself.
+#' **Legacy campaign datasets** (`"navco1.3"`, `"navco2.1"`, `"beissinger"`,
+#' `"csra"`) can have multiple rows per country-year when campaigns overlap.
+#' With `aggregate = TRUE` (the default) these are collapsed to country-year
+#' by taking the maximum of all numeric columns, and an `n_campaigns` count
+#' column is added. Set `aggregate = FALSE` to keep campaign-level rows (may
+#' produce duplicates).
 #'
 #' @param panel A data frame produced by `build_states_panel()`.
-#' @param dataset Dataset to load. One of `"navco1.3"`, `"navco2.1"`,
-#'   `"beissinger"`, or `"csra"`.
+#' @param dataset Dataset to load. One of:
+#'   \describe{
+#'     \item{`"navco1.3"`}{NAVCO 1.3 nonviolent campaign onsets (1900-2006).}
+#'     \item{`"navco2.1"`}{NAVCO 2.1 campaign-years (1945-2013).}
+#'     \item{`"beissinger"`}{Beissinger revolutionary episode onsets (1900-2014).}
+#'     \item{`"csra"`}{HSE CSRA revolutionary episodes (1900-2022).}
+#'     \item{`"scad"`}{SCAD 2018 social conflict events, Africa and Latin America
+#'       (1990-2018). Prefix: `scad_`.}
+#'     \item{`"ucdp_prio"`}{UCDP/PRIO Armed Conflict Dataset v26.1 (1946-2025).
+#'       Prefix: `ucdp_prio_`.}
+#'     \item{`"ucdp_vpp"`}{UCDP Violent Political Protest v26.1 (1989-2025).
+#'       Prefix: `ucdp_vpp_`. Requires the `readxl` package.}
+#'     \item{`"mm"`}{Mass Mobilization Project v4 (1990-2019). Prefix: `mm_`.}
+#'     \item{`"mmad"`}{Mass Mobilization in Autocracies Database (2003-2022).
+#'       Prefix: `mmad_`.}
+#'   }
 #' @param aggregate Logical. If `TRUE` (default), aggregates to country-year
-#'   before joining. If `FALSE`, performs a raw left join (may produce
-#'   duplicate rows).
+#'   before joining (relevant for legacy campaign datasets only). If `FALSE`,
+#'   performs a raw left join.
 #'
-#' @return The input panel with conflict columns added via left join.
+#' @return The input panel with conflict/protest columns added via left join.
 #'
 #' @examples
 #' panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
 #'   add_conflict(dataset = "navco2.1")
 #'
-#' # Raw join — researcher handles aggregation manually
+#' panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
+#'   add_conflict(dataset = "ucdp_prio")
+#'
+#' panel <- build_states_panel(2005, 2020, coding_system = "cow") |>
+#'   add_conflict(dataset = "mmad")
+#'
+#' # Raw join for legacy datasets — researcher handles aggregation manually
 #' panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
 #'   add_conflict(dataset = "navco1.3", aggregate = FALSE)
 #'
@@ -139,4 +159,44 @@ add_conflict <- function(panel, dataset, aggregate = TRUE) {
   }
 
   dplyr::left_join(panel, conflicts, by = c(id_col, "year"))
+}
+
+
+#' Add leader data to a state panel
+#'
+#' @description
+#' Joins country-year leader data onto an existing state panel. The coding
+#' system and year range are detected automatically from the panel.
+#'
+#' Each country-year is assigned the leader who held power at the end of that
+#' year (i.e., the leader with the latest start date when multiple leaders
+#' served in the same year).
+#'
+#' @param panel A data frame produced by `build_states_panel()`.
+#' @param dataset Dataset to use: `"archigos"` (default) or `"reign"`.
+#'   See `load_leader_data()` for details.
+#'
+#' @return The input panel with leader columns added via left join.
+#'
+#' @examples
+#' panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
+#'   add_leader_data(dataset = "archigos")
+#'
+#' panel <- build_states_panel(1990, 2010, coding_system = "cow") |>
+#'   add_leader_data(dataset = "reign")
+#'
+#' @export
+add_leader_data <- function(panel, dataset = c("archigos", "reign")) {
+  dataset       <- match.arg(dataset)
+  coding_system <- detect_coding_system(panel)
+  yr            <- range(panel$year, na.rm = TRUE)
+
+  leaders <- load_leader_data(
+    start_year    = yr[1],
+    end_year      = yr[2],
+    dataset       = dataset,
+    coding_system = coding_system
+  )
+
+  dplyr::left_join(panel, leaders, by = c(coding_system, "year"))
 }

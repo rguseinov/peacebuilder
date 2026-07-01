@@ -38,7 +38,8 @@ panel <- build_states_panel(
   ) |>
   add_gdp() |>
   add_vdem(vars = c("v2x_polyarchy", "v2x_libdem", "v2x_rule")) |>
-  add_conflict(dataset = "navco2.1")
+  add_conflict(dataset = "navco2.1") |>
+  add_leader_data(dataset = "archigos")
 ```
 
 ### Standalone workflow
@@ -118,30 +119,57 @@ panel |> add_vdem(vars = c("v2x_polyarchy", "v2x_libdem"))
 
 Loads one of four conflict and revolutionary episode datasets. Supports both COW and GW coding.
 
-| Dataset | Source | Coverage | Unit of analysis |
-|---|---|---|---|
-| `"navco1.3"` | NAVCO 1.3 | 1900–2006 | Campaign (onset) |
-| `"navco2.1"` | NAVCO 2.1 | 1945–2013 | Campaign-year |
-| `"beissinger"` | Beissinger Revolutionary Episodes | 1900–2014 | Episode (onset) |
-| `"csra"` | HSE CSRA Revolutions Dataset | 1900–2022 | Episode (onset) |
+| Dataset | Source | Coverage | Output level | Prefix |
+|---|---|---|---|---|
+| `"navco1.3"` | NAVCO 1.3 | 1900–2006 | Campaign onset | `nvc1.3_` |
+| `"navco2.1"` | NAVCO 2.1 | 1945–2013 | Campaign-year | `nvc2.1_` |
+| `"beissinger"` | Beissinger Revolutionary Episodes | 1900–2014 | Episode onset | `beissinger_` |
+| `"csra"` | HSE CSRA Revolutions Dataset | 1900–2022 | Episode onset | `csra_` |
+| `"scad"` | The Social Conflict Analysis Database (SCAD, Africa + Latin America) | 1990–2018 | Country-year onset | `scad_` |
+| `"ucdp_prio"` | UCDP/PRIO Armed Conflict v26.1 | 1946–2025 | Country-year onset | `ucdp_prio_` |
+| `"ucdp_vpp"` | UCDP Violent Political Protest v26.1 | 1989–2025 | Country-year onset | `ucdp_vpp_` |
+| `"mm"` | Mass Mobilization Project v4 | 1990–2020 | Country-year onset | `mm_` |
+| `"mmad"` | Mass Mobilization in Autocracies v5 | 2003–2022 | Country-year onset | `mmad_` |
+
+New datasets (`scad`, `ucdp_prio`, `ucdp_vpp`, `mm`, `mmad`) are pre-aggregated to country-year onsets inside `conflict_data()`. Legacy campaign datasets return one row per active campaign; `add_conflict()` collapses these with `max()` by default.
 
 ```r
-# Standalone — campaign-level, full variables
-navco <- conflict_data(
-  start_year    = 1990,
-  end_year      = 2015,
-  dataset       = "navco2.1",
-  coding_system = "cow"
-)
+# Standalone
+navco   <- conflict_data(1990, 2015, dataset = "navco2.1",  coding_system = "cow")
+scad    <- conflict_data(1995, 2015, dataset = "scad",      coding_system = "cow")
+ucdp    <- conflict_data(1990, 2020, dataset = "ucdp_prio", coding_system = "gw")
+mm_data <- conflict_data(1995, 2015, dataset = "mm",        coding_system = "cow")
+mmad    <- conflict_data(2005, 2020, dataset = "mmad",      coding_system = "cow")
 
-# Pipeline — aggregates to country-year automatically (max of numeric columns)
+# Pipeline — all datasets work with add_conflict()
 panel |> add_conflict(dataset = "navco2.1")
+panel |> add_conflict(dataset = "ucdp_prio")
+panel |> add_conflict(dataset = "mmad")
 
-# Pipeline — raw join without aggregation (may produce duplicate rows)
+# Raw join without aggregation (for legacy campaign datasets)
 panel |> add_conflict(dataset = "navco1.3", aggregate = FALSE)
 ```
 
-When multiple campaigns overlap in the same country-year, `add_conflict()` aggregates by taking the maximum of all numeric columns and adds an `n_campaigns` count. For finer control over aggregation — e.g. summing participant counts or keeping campaign names — use `conflict_data()` and join manually.
+> **Note:** `ucdp_vpp` requires the `readxl` package: `install.packages("readxl")`
+
+### `load_leader_data()` / `add_leader_data()`
+
+Country-year leader data from two sources. Each row contains the leader who held power at the end of the year; in transition years the latest-starting leader is kept.
+
+| Dataset | Source | Coverage | Key variables |
+|---|---|---|---|
+| `"archigos"` | Archigos 4.1 | 1875–2015 | `entry`, `exit`, `irregular_entry`, `irregular_exit`, `female_leader`, `yrborn`, `posttenurefate`, `leader_tenure` |
+| `"reign"` | REIGN Leader List | 1921–2021 | `female_leader`, `military_bg`, `birthyear`, `leader_tenure` |
+
+```r
+# Standalone
+arch  <- load_leader_data(1990, 2015, dataset = "archigos", coding_system = "cow")
+reign <- load_leader_data(1990, 2015, dataset = "reign",    coding_system = "gw")
+
+# Pipeline
+panel |> add_leader_data(dataset = "archigos")
+panel |> add_leader_data(dataset = "reign")
+```
 
 ## Citation
 

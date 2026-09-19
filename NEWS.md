@@ -6,6 +6,12 @@
   it to `FALSE` to drop the per-row country/code labels, which otherwise
   overlap and become illegible once the panel covers more than a few
   dozen states.
+* `plot_regional_coverage()`'s region labels are now horizontal and
+  word-wrapped instead of angled, and its region field's canonical
+  "Middle East" label is the shorter "Middle East & North Africa" form.
+  `plot_temporal_coverage()`'s period labels are now vertical instead of
+  angled. Both plots no longer set a `ggplot2` title (redundant with a
+  caption in a manuscript).
 * Added `plot_regional_coverage()` and `plot_temporal_coverage()` to compare
   regional and temporal event coverage across any combination of
   `conflict_data()` campaign/episode datasets, plus a "Comparing

@@ -77,16 +77,17 @@ test_that("fetch_campaign_events collapses the region field to 7 clean categorie
   # classification: a few pre-1990 historical entities (Yemen Arab
   # Republic, Yemen People's Republic, the United Arab Republic) still
   # carry the World Bank's older "Middle East & North Africa" label while
-  # every other MENA country carries the newer "Middle East, North Africa,
-  # Afghanistan & Pakistan" label. Campaign data covering the 1950s-80s
-  # does include those historical codes, so without recoding, one region
-  # would silently split into two bars.
+  # every other MENA country carries the newer, longer "Middle East,
+  # North Africa, Afghanistan & Pakistan" label. Campaign data covering
+  # the 1950s-80s does include those historical codes, so without
+  # recoding, one region would silently split into two bars. The shorter
+  # label is kept as canonical (better for plot axis text).
   events <- fetch_campaign_events(
     c("navco1.3", "navco2.1", "beissinger", "csra", "mec"), 1950, 2013, "cow"
   )
   expect_length(unique(events$region), 7L)
-  expect_false("Middle East & North Africa" %in% events$region)
-  expect_true(
+  expect_true("Middle East & North Africa" %in% events$region)
+  expect_false(
     "Middle East, North Africa, Afghanistan & Pakistan" %in% events$region
   )
 })

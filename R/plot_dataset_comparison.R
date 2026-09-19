@@ -28,11 +28,12 @@
 #' (Yemen Arab Republic, Yemen People's Republic, the United Arab
 #' Republic) still carry the World Bank's older "Middle East & North
 #' Africa" label, while every other country in that region carries the
-#' newer "Middle East, North Africa, Afghanistan & Pakistan" label --
-#' these historical COW/GW codes do appear in campaign data covering the
-#' 1950s-80s, so left as-is they'd split one region into two bars. The
-#' older label is recoded to the newer one here so the region breakdown
-#' stays at exactly 7 categories.
+#' newer, longer "Middle East, North Africa, Afghanistan & Pakistan"
+#' label -- these historical COW/GW codes do appear in campaign data
+#' covering the 1950s-80s, so left as-is they'd split one region into two
+#' bars. The newer label is recoded to the shorter, older one here (kept
+#' as the canonical form for display) so the region breakdown stays at
+#' exactly 7 categories.
 #'
 #' @keywords internal
 fetch_campaign_events <- function(datasets, start_year, end_year, coding_system) {
@@ -58,8 +59,9 @@ fetch_campaign_events <- function(datasets, start_year, end_year, coding_system)
   events$region <- suppressWarnings(
     countrycode::countrycode(events$unit, region_dest, "region")
   )
-  events$region[events$region == "Middle East & North Africa"] <-
-    "Middle East, North Africa, Afghanistan & Pakistan"
+  events$region[
+    events$region == "Middle East, North Africa, Afghanistan & Pakistan"
+  ] <- "Middle East & North Africa"
   tidyr::drop_na(events, "region")
 }
 
@@ -139,12 +141,27 @@ plot_regional_coverage <- function(
     ggplot2::aes(x = .data$region, y = .data$value, fill = .data$dataset)
   ) +
     ggplot2::geom_col(position = "dodge") +
-    ggplot2::labs(
-      x = "Region", y = y_lab, fill = "Dataset",
-      title = paste0("Regional coverage of events, ", start_year, "-", end_year)
-    ) +
+    ggplot2::scale_x_discrete(labels = wrap_labels) +
+    ggplot2::labs(x = "Region", y = y_lab, fill = "Dataset") +
     ggplot2::theme_minimal() +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 30, hjust = 1))
+    ggplot2::theme(axis.text.x = ggplot2::element_text(hjust = 0.5))
+}
+
+
+#' Wrap long axis labels onto multiple lines
+#'
+#' @param labels Character vector of labels.
+#' @param width Target line width in characters. Default `12`.
+#'
+#' @return `labels`, each wrapped at word boundaries and joined with `\n`.
+#'
+#' @keywords internal
+wrap_labels <- function(labels, width = 12) {
+  vapply(
+    labels,
+    function(x) paste(strwrap(x, width = width), collapse = "\n"),
+    character(1)
+  )
 }
 
 
@@ -239,11 +256,12 @@ plot_temporal_coverage <- function(
     ggplot2::geom_point() +
     ggplot2::labs(
       x = paste0(period_length, "-year period"), y = "Number of events",
-      color = "Dataset",
-      title = if (by_region) "Regional coverage of events over time" else "Coverage of events over time"
+      color = "Dataset"
     ) +
     ggplot2::theme_minimal() +
-    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 45, hjust = 1))
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(angle = 90, hjust = 1, vjust = 0.5)
+    )
 
   if (by_region) {
     p <- p + ggplot2::facet_wrap(ggplot2::vars(.data$region))

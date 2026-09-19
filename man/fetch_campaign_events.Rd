@@ -41,10 +41,11 @@ at \code{start_year} are not mistaken for new onsets.
 (Yemen Arab Republic, Yemen People's Republic, the United Arab
 Republic) still carry the World Bank's older "Middle East & North
 Africa" label, while every other country in that region carries the
-newer "Middle East, North Africa, Afghanistan & Pakistan" label --
-these historical COW/GW codes do appear in campaign data covering the
-1950s-80s, so left as-is they'd split one region into two bars. The
-older label is recoded to the newer one here so the region breakdown
-stays at exactly 7 categories.
+newer, longer "Middle East, North Africa, Afghanistan & Pakistan"
+label -- these historical COW/GW codes do appear in campaign data
+covering the 1950s-80s, so left as-is they'd split one region into two
+bars. The newer label is recoded to the shorter, older one here (kept
+as the canonical form for display) so the region breakdown stays at
+exactly 7 categories.
 }
 \keyword{internal}
